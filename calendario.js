@@ -1,6 +1,7 @@
-//Este ejercicio te indica que día de la semana cayó el día que tu le indiques 
+//Este ejercicio te indica que día de la semana cayó el día que tu le indiques del año pasado considerando que inicio el año en lunes
 var yearDayNumber = prompt("Indica el número de día que te gustaría saber que cayó:")
 var janfirstDayNumber = yearDayNumber % 7;
+function getDayNumber(yearDayNumber,janfirstDayNumber){
 if(yearDayNumber>=0&&yearDayNumber<=365){
 	var janfirstDayNumber = yearDayNumber % 7;
 if(janfirstDayNumber==0){
@@ -23,4 +24,6 @@ if(janfirstDayNumber==0){
 }else{
 		alert("Lo sentimos el año solo tiene 365 días");
 };
+};
+getDayNumber(yearDayNumber,janfirstDayNumber);
 

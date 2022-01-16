@@ -1,9 +1,18 @@
-//Este ejericio genera una cita considerando que todos los dias se trabaja
+//Este ejericio da verdadero o falso para si se cumplen 2 condisiones 
 
-var hourNumber = prompt("Indica la hora de la cita:");
-var dayNumer = prompt("Indica el día de la cita:");
-if(hourNumber>=9&&hourNumber<=18){
-	alert("Tu cita será el día " + dayNumer + " a las " + hourNumber);
-}else{
-	alert("Lo sentimos no es horario laboral");
+var dayNumber = 5;
+var hourNumber = 16;
+function businessHours(dayNumber, hourNumber){
+    if(dayNumber>=0&&dayNumber<=6){
+        if(hourNumber>=9 && hourNumber<=18){
+            console.log(true);
+        }
+        else {
+            console.log(false);
+        }
+    }
+    else {
+        console.log(false);
+    }
 };
+businessHours(dayNumber, hourNumber);
